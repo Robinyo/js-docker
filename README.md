@@ -25,7 +25,7 @@ cd js-docker
 [Download](https://sourceforge.net/projects/jr-community-installers/files/Server/) the Community Edition of
 JasperReports Server and place it in the `resources` directory.
 
-Then run the following command:
+Then run the following commands:
 
 ```
 cd resources
