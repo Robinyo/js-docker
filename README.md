@@ -4,7 +4,7 @@ This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js
 configuring, and running **JasperReports Server (Community Edition)**, **PostgreSQL** and **pgAdmin** in containers.
 
 <p align="center">
-  <img src="https://github.com/Robinyo/js-docker/blob/master/docs/screen-shots/jasper-reports-server.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasper-reports-server.png">
 </p>
 
 ### Prerequisites
@@ -64,7 +64,7 @@ docker compose build
 ## Serve the applications
 
 To run a multi-container application with the Docker CLI, you use the `docker compose up` command.
-This command uses the project's [docker-compose.yml](https://github.com/Robinyo/js-docker/blob/master/docker-compose.yml)
+This command uses the project's [docker-compose.yml](https://github.com/Robinyo/js-docker/blob/main/docker-compose.yml)
 file to deploy a multi-container application:
 
 ```
@@ -80,7 +80,7 @@ You can login using the following credentials:
 * Sample User - User ID: `joeuser` and Password: `joeuser`
 
 <p align="center">
-  <img src="https://github.com/Robinyo/js-docker/blob/master/docs/screen-shots/login.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/login.png">
 </p>
 
 To stop the services:
