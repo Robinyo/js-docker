@@ -1,7 +1,7 @@
 # Introduction
 
 This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been updated to include support for building,
-configuring, and running **JasperReports Server Community Edition**, **PostgreSQL** and **pgAdmin** in containers.
+configuring, and running the **Community Edition of JasperReports Server**, **PostgreSQL** and **pgAdmin** in containers.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ cd ~/workspace
 Clone the project by running the following command:
 
 ```
-git clone https://github.com/Robinyo/js-docker
+git clone git@github.com:Robinyo/js-docker.git
 cd js-docker
 ```
 
