@@ -33,7 +33,7 @@ chmod 755 unpackWARInstaller-ce.sh
 ./unpackWARInstaller-ce.sh
 ```
 
-[Download](https://github.com/fg2it/phantomjs-on-raspberry/releases/) the ARM 64-bit version of PhantomJS and place it in the `resources` directory. 
+[Download](https://github.com/fg2it/phantomjs-on-raspberry/releases/) the ARM 64-bit version of PhantomJS and place it in the `resources` directory. </br>
 Alternatively, [Download](https://phantomjs.org/download.html) the AMD 64-bit version of PhantomJS and place it in the `resources` directory.
 
 [Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver and place it in the `resources`
