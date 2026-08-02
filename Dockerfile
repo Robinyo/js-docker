@@ -2,7 +2,7 @@
 # This file is subject to the license terms contained
 # in the license file that is distributed with this file.
 
-ARG TOMCAT_BASE_IMAGE=tomcat:9.0.35-jdk11-openjdk
+ARG TOMCAT_BASE_IMAGE=tomcat:9.0-jdk11
 FROM ${TOMCAT_BASE_IMAGE}
 
 ARG DN_HOSTNAME
@@ -20,7 +20,7 @@ ENV KS_PASSWORD ${KS_PASSWORD:-changeit}
 ENV JRS_HTTPS_ONLY ${JRS_HTTPS_ONLY:-false}
 ENV HTTP_PORT ${HTTP_PORT:-8080}
 ENV HTTPS_PORT ${HTTPS_PORT:-8443}
-ENV POSTGRES_JDBC_DRIVER_VERSION ${POSTGRES_JDBC_DRIVER_VERSION:-42.2.14}
+ENV POSTGRES_JDBC_DRIVER_VERSION ${POSTGRES_JDBC_DRIVER_VERSION:-42.7.13}
 ENV JASPERREPORTS_SERVER_VERSION ${JASPERREPORTS_SERVER_VERSION:-7.5.0}
 ENV EXPLODED_INSTALLER_DIRECTORY ${EXPLODED_INSTALLER_DIRECTORY:-resources/jasperreports-server-cp-$JASPERREPORTS_SERVER_VERSION-bin}
 
@@ -43,20 +43,19 @@ COPY ${EXPLODED_INSTALLER_DIRECTORY}/buildomatic/bin/*.xml /usr/src/jasperreport
 COPY ${EXPLODED_INSTALLER_DIRECTORY}/buildomatic/bin/app-server /usr/src/jasperreports-server/buildomatic/bin/app-server/
 COPY ${EXPLODED_INSTALLER_DIRECTORY}/buildomatic/bin/groovy /usr/src/jasperreports-server/buildomatic/bin/groovy/
 
-# supporting resources
+# Supporting resources
 COPY ${EXPLODED_INSTALLER_DIRECTORY}/buildomatic/conf_source /usr/src/jasperreports-server/buildomatic/conf_source/
 COPY ${EXPLODED_INSTALLER_DIRECTORY}/buildomatic/target /usr/src/jasperreports-server/buildomatic/target/
 
 COPY scripts /
 
 # Copy Fonts Extension lib
-COPY assets/libs $CATALINA_HOME/webapps/jasperserver/WEB-INF/lib/
+# COPY assets/libs $CATALINA_HOME/webapps/jasperserver/WEB-INF/lib/
 
 # Copy JDBC Driver
-COPY resources/postgresql-${POSTGRES_JDBC_DRIVER_VERSION}.jar /usr/src/jasperreports-server/buildomatic/conf_source/db/postgresql/jdbc/
+COPY resources/postgresql-${POSTGRES_JDBC_DRIVER_VERSION}.jar /usr/src/jasperreports-server/buildomatic/conf_source/db/postgresql/jdbc
 
-RUN echo "nameserver 8.8.8.8" | tee /etc/resolv.conf > /dev/null && \
-    chmod +x /*.sh && \
+RUN chmod +x /*.sh && \
     /installPackagesForJasperserver-ce.sh > /dev/null && \
 	echo "finished installing packages" && \
     rm -rf $CATALINA_HOME/webapps/ROOT && \

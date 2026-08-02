@@ -55,7 +55,6 @@ docker container prune && docker volume prune && docker network prune
 export DOCKER_DEFAULT_PLATFORM=linux/arm64
 # export DOCKER_DEFAULT_PLATFORM=windows/amd64
 
-# docker compose build --no-cache
 docker compose build
 ```
 
