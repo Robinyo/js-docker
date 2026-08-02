@@ -1,14 +1,13 @@
 # Introduction
 
-This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been 
-updated to include support for building, configuring, and running **PostgreSQL**, **pgAdmin** and **TIBCO JasperReports 
-Server Community Edition** in containers.
+This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been updated to include support for building,
+configuring, and running **TIBCO JasperReports Server Community Edition**, **PostgreSQL* and **pgAdmin** in containers.
 
-## Prerequisites
+### Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-# Clone the project
+## Clone the project
 
 Change the current working directory to the location where you want the cloned directory to be:
 
@@ -23,20 +22,24 @@ git clone https://github.com/Robinyo/js-docker
 cd js-docker
 ```
 
-[Download](https://community.jaspersoft.com/project/jasperreports-server/releases) the Community Edition of 
+[Download](https://sourceforge.net/projects/jr-community-installers/files/Server/) the Community Edition of
 JasperReports Server and place it in the `resources` directory.
 
-Unpack the zip archive:
+Then run the following command:
 
 ```
-# chmod 755 unpackWARInstaller-ce.sh
+cd resources
+chmod 755 unpackWARInstaller-ce.sh
 ./unpackWARInstaller-ce.sh
 ```
 
-[Download](https://phantomjs.org/download.html) the Linux 64-bit version of PhantomJS and place it in the `resources` 
+[Download](https://github.com/fg2it/phantomjs-on-raspberry/releases/) the ARM 64-bit version of PhantomJS and place it in the `resources`
 directory.
 
-[Download](https://jdbc.postgresql.org/download.html) the PostgreSQL JDBC driver and place it in the `resources` 
+Alternatively, [Download](https://phantomjs.org/download.html) the AMD 64-bit PhantomJS and place
+it in the `resources` directory.
+
+[Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver and place it in the `resources`
 directory.
 
 # Build the project
@@ -44,20 +47,29 @@ directory.
 To build the project:
 
 ```
-docker-compose build
+# cd ~/workspace/js-docker
+
+docker system prune && \
+docker container prune && docker volume prune && docker network prune
+
+export DOCKER_DEFAULT_PLATFORM=linux/arm64
+# export DOCKER_DEFAULT_PLATFORM=windows/amd64
+
+# docker compose build --no-cache
+docker compose build
 ```
 
-# Serve the applications
+## Serve the applications
 
-To run a multi-container application with the Docker CLI, you use the `docker-compose up` command. 
-This command uses the project's [docker-compose.yml](https://github.com/Robinyo/js-docker/blob/master/docker-compose.yml) 
+To run a multi-container application with the Docker CLI, you use the `docker compose up` command.
+This command uses the project's [docker-compose.yml](https://github.com/Robinyo/js-docker/blob/master/docker-compose.yml)
 file to deploy a multi-container application:
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
-**Note:** The PostgreSQL, pgAdmin and JasperReports Server containers may take a minute or two to startup. 
+**Note:** The JasperReports Server, PostgreSQL and pgAdmin containers may take a minute or two to startup.
 
 Navigate to the JasperReports Server Community Edition welcome page: http://localhost:11001/jasperserver
 
@@ -66,13 +78,35 @@ You can login using the following credentials:
 * Sample User - User ID: `joeuser` and Password: `joeuser`
 
 <p align="center">
-  <img src="https://github.com/Robinyo/js-docker/blob/master/login.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/master/docs/screen-shots/login.png">
 </p>
+
+To stop the services:
+
+```
+docker compose stop
+```
+
+To remove the services and the associated data, run:
+
+```
+docker compose down -v
+```
+
+Note: The `-v` flag deletes all volumes, including process data, users, and other persisted state. Omit `-v` if you want to keep your data.
+
+To check the environment variables inside your container:
+
+```
+docker inspect -f \
+  '{{range $index, $value := .Config.Env}}{{println $value}}{{end}}' \
+  serendipity-bff
+```
 
 You can check the status of the containers using the following command:
 
 ```
-docker-compose ps
+docker compose ps
 ```
 
 To check the logs inside a container:
@@ -82,10 +116,4 @@ docker container logs postgres
 docker container logs pgadmin
 docker container logs jasperreports-server
 docker container logs jasperreports-server-cmdline
-```
-
-You can stop the containers using the following command:
-
-```
-docker-compose down -v
 ```

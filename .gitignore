@@ -26,9 +26,11 @@ Thumbs.db
 *.ipr
 
 # Misc
+/archive
 /secrets
 /tmp
 /temp
 /pgdata
+/ZIPs
 
 TODO.txt
