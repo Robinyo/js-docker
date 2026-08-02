@@ -1,4 +1,4 @@
-# Introduction
+# ❯ Introduction
 
 This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been updated to include support for building,
 configuring, and running **JasperReports Server (Community Edition)**, **PostgreSQL** and **pgAdmin** in containers.
@@ -7,13 +7,15 @@ configuring, and running **JasperReports Server (Community Edition)**, **Postgre
   <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasper-reports-server.png">
 </p>
 
+Also see: [Background](docs/background/README.md)
+
 ### Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 ## JasperReports Server
 
-## Clone the project
+### Clone the project
 
 Change the current working directory to the location where you want the cloned directory to be:
 
@@ -45,7 +47,7 @@ Alternatively, [download](https://phantomjs.org/download.html) the AMD 64-bit ve
 [Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver and place it in the `resources`
 directory.
 
-# Build the project
+### Build the project
 
 To build the project:
 
@@ -61,7 +63,7 @@ export DOCKER_DEFAULT_PLATFORM=linux/arm64
 docker compose build
 ```
 
-## Serve the applications
+### Serve the applications
 
 To run a multi-container application with the Docker CLI, you use the `docker compose up` command.
 This command uses the project's [docker-compose.yml](https://github.com/Robinyo/js-docker/blob/main/docker-compose.yml)
@@ -120,6 +122,10 @@ docker container logs jasperreports-server
 docker container logs jasperreports-server-cmdline
 ```
 
+### Source Code
+
+See: [JasperReports Server (Community Edition)](https://github.com/jose-da-s/jasper-server-os)
+
 ## Jaspersoft Studio
 
 Jaspersoft Studio enables you to create highly formatted, pixel-perfect designed reports and data visualisations that
@@ -128,3 +134,7 @@ meet any requirements and can pull from the widest selection of data sources.
 [Download](https://sourceforge.net/projects/jr-community-installers/) the Community Edition of Jaspersoft Studio.
 
 Also see: [Jaspersoft Community](https://www.jaspersoft.com/products/jaspersoft-community)
+
+## ❯ References
+
+* Jaspersoft community: [Jaspersoft Studio resources](https://community.jaspersoft.com/knowledgebase/getting-started/jaspersoft-studio-resources-and-tutorials/)
