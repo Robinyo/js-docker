@@ -1,7 +1,7 @@
 # Introduction
 
 This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been updated to include support for building,
-configuring, and running the **Community Edition of JasperReports Server**, **PostgreSQL** and **pgAdmin** in containers.
+configuring, and running **JasperReports Server (Community Edition)**, **PostgreSQL** and **pgAdmin** in containers.
 
 ### Prerequisites
 
@@ -36,7 +36,7 @@ chmod 755 unpackWARInstaller-ce.sh
 [Download](https://github.com/fg2it/phantomjs-on-raspberry/releases/) the ARM 64-bit version of PhantomJS and place it in the `resources`
 directory.
 
-Alternatively, [Download](https://phantomjs.org/download.html) the AMD 64-bit PhantomJS and place
+Alternatively, [Download](https://phantomjs.org/download.html) the AMD 64-bit version of PhantomJS and place
 it in the `resources` directory.
 
 [Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver and place it in the `resources`
