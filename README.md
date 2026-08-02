@@ -3,9 +3,15 @@
 This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been updated to include support for building,
 configuring, and running **JasperReports Server (Community Edition)**, **PostgreSQL** and **pgAdmin** in containers.
 
+<p align="center">
+  <img src="https://github.com/Robinyo/js-docker/blob/master/docs/screen-shots/jasper-reports-server.png">
+</p>
+
 ### Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+## JasperReports Server
 
 ## Clone the project
 
@@ -113,3 +119,12 @@ docker container logs pgadmin
 docker container logs jasperreports-server
 docker container logs jasperreports-server-cmdline
 ```
+
+## Jaspersoft Studio
+
+Jaspersoft Studio enables you to create highly formatted, pixel-perfect designed reports and data visualisations that
+meet any requirements and can pull from the widest selection of data sources.
+
+[Download](https://sourceforge.net/projects/jr-community-installers/) the Community Edition of Jaspersoft Studio.
+
+Also see: [Jaspersoft Community](https://www.jaspersoft.com/products/jaspersoft-community)
