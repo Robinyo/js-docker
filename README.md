@@ -27,7 +27,7 @@ cd js-docker
 ```
 
 [Download](https://sourceforge.net/projects/jr-community-installers/files/Server/) the Community Edition of
-**JasperReports Server version 7.5.1** from SourceForge and place it in the `resources` directory.
+**JasperReports Server version 7.5.0** from SourceForge and place it in the `resources` directory.
 
 Then run the following commands:
 
