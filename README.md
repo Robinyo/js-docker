@@ -42,7 +42,7 @@ and place it in the `resources` directory. </br>
 Alternatively, [download](https://phantomjs.org/download.html) the AMD 64-bit version of PhantomJS from the PhantomJS 
 website and place it in the `resources` directory.
 
-[Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver and place it in the `resources`
+[Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver from the PostgreSQL website and place it in the `resources`
 directory.
 
 ### Build the project
