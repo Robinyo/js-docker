@@ -13,6 +13,13 @@ Also see: [Background](docs/background/README.md)
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
+## ❯ Documentation
+
+* Administrator Documentation
+  * [Working with JasperReports Server](docs/jasperreports-server/README.md)
+  * [Working with Jaspersoft Studio](docs/jaspersoft-studio/README.md)
+  * [Working with pgAdmin](docs/pgadmin/README.md)
+
 ## JasperReports Server
 
 ### Clone the project
