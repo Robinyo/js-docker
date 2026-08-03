@@ -9,15 +9,6 @@ Also see: [Background](docs/background/README.md)
 
 ![divider](./divider.png)
 
-## Documentation
-
-* Administrator Documentation
-  * [Working with JasperReports Server](docs/jasperreports-server/README.md)
-  * [Working with Jaspersoft Studio](docs/jaspersoft-studio/README.md)
-  * [Working with pgAdmin](docs/pgadmin/README.md)
-
-![divider](./divider.png)
-
 ## JasperReports Server
 
 ### Clone the project
@@ -141,3 +132,12 @@ meet any requirements and can pull from the widest selection of data sources.
 [Download](https://sourceforge.net/projects/jr-community-installers/) the Community Edition of Jaspersoft Studio.
 
 Also see: [Jaspersoft Community](https://www.jaspersoft.com/products/jaspersoft-community)
+
+![divider](./divider.png)
+
+## Documentation
+
+* Administrator Documentation
+  * [Working with JasperReports Server](docs/jasperreports-server/README.md)
+  * [Working with Jaspersoft Studio](docs/jaspersoft-studio/README.md)
+  * [Working with pgAdmin](docs/pgadmin/README.md)
