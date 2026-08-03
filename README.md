@@ -4,7 +4,7 @@ This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js
 configuring, and running **JasperReports Server (Community Edition)**, **PostgreSQL** and **pgAdmin** in containers.
 
 <p align="center">
-  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasper-reports-server.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-reports-folder.png">
 </p>
 
 Also see: [Background](docs/background/README.md)
