@@ -9,7 +9,7 @@ Also see: [Background](docs/background/README.md)
 
 ![divider](./divider.png)
 
-## JasperReports Server
+## Getting Started
 
 ### Clone the project
 
@@ -71,7 +71,7 @@ docker compose up -d
 
 **Note:** The JasperReports Server, PostgreSQL and pgAdmin containers may take a minute or two to startup.
 
-Navigate to the JasperReports Server Community Edition welcome page: http://localhost:11001/jasperserver
+Navigate to the JasperReports Server welcome page: http://localhost:11001/jasperserver
 
 You can login using the following credentials:
 * JasperReports Admin User - User ID: `jasperadmin` and Password: `jasperadmin`
