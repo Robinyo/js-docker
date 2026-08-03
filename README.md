@@ -45,6 +45,8 @@ website and place it in the `resources` directory.
 [Download](https://jdbc.postgresql.org/download/) the **PostgreSQL JDBC driver version 42.7.13** from the PostgreSQL website and place it in the `resources`
 directory.
 
+**Note**: If you choose to use a different configuration, you will need to update the project's `.env` and `jasperreports-server.env` files.
+
 ### Build the project
 
 To build the project:
