@@ -111,7 +111,7 @@ To check the environment variables inside your container:
 ```
 docker inspect -f \
   '{{range $index, $value := .Config.Env}}{{println $value}}{{end}}' \
-  serendipity-bff
+  jasperreports-server
 ```
 
 You can check the status of the containers using the following command:
