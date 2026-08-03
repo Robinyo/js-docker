@@ -37,12 +37,12 @@ chmod 755 unpackWARInstaller-ce.sh
 ./unpackWARInstaller-ce.sh
 ```
 
-[Download](https://github.com/fg2it/phantomjs-on-raspberry/releases/) the ARM 64-bit version of PhantomJS from GitHub 
+[Download](https://github.com/fg2it/phantomjs-on-raspberry/releases/) the ARM 64-bit version of **PhantomJS** from GitHub 
 and place it in the `resources` directory. </br>
-Alternatively, [download](https://phantomjs.org/download.html) the AMD 64-bit version of PhantomJS from the PhantomJS 
+Alternatively, [download](https://phantomjs.org/download.html) the AMD 64-bit version of **PhantomJS** from the PhantomJS 
 website and place it in the `resources` directory.
 
-[Download](https://jdbc.postgresql.org/download/) the PostgreSQL JDBC driver from the PostgreSQL website and place it in the `resources`
+[Download](https://jdbc.postgresql.org/download/) the **PostgreSQL JDBC driver version 42.7.13** from the PostgreSQL website and place it in the `resources`
 directory.
 
 ### Build the project
