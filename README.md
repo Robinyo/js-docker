@@ -1,5 +1,3 @@
-# ❯ Introduction
-
 This repository is a fork of the [js-docker](https://github.com/TIBCOSoftware/js-docker) repository that has been updated to include support for building,
 configuring, and running **JasperReports Server (Community Edition)**, **PostgreSQL** and **pgAdmin** in containers.
 
@@ -9,11 +7,9 @@ configuring, and running **JasperReports Server (Community Edition)**, **Postgre
 
 Also see: [Background](docs/background/README.md)
 
-### Prerequisites
+![divider](./divider.png)
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
-
-## ❯ Documentation
+## Documentation
 
 * Administrator Documentation
   * [Working with JasperReports Server](docs/jasperreports-server/README.md)
@@ -141,7 +137,3 @@ meet any requirements and can pull from the widest selection of data sources.
 [Download](https://sourceforge.net/projects/jr-community-installers/) the Community Edition of Jaspersoft Studio.
 
 Also see: [Jaspersoft Community](https://www.jaspersoft.com/products/jaspersoft-community)
-
-## ❯ References
-
-* Jaspersoft community: [Jaspersoft Studio resources](https://community.jaspersoft.com/knowledgebase/getting-started/jaspersoft-studio-resources-and-tutorials/)
