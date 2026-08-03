@@ -112,10 +112,10 @@ docker compose ps
 To check the logs inside a container:
 
 ```
-docker container logs postgres
-docker container logs pgadmin
 docker container logs jasperreports-server
 docker container logs jasperreports-server-cmdline
+docker container logs postgres
+docker container logs pgadmin
 ```
 
 ### Source Code
