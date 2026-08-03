@@ -13,13 +13,13 @@ Login using the PGADMIN_DEFAULT_EMAIL (admin@pgadmin.org) and PGADMIN_DEFAULT_PA
 Create Connection Wizard - General Tab:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/main/projects/spring-boot/docs/screen-shots/pgamin-server-general-tab.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/pgamin-server-general-tab.png">
 </p>
 
 Create Connection Wizard - Connection Tab:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/main/projects/spring-boot/docs/screen-shots/pgamin-server-connection-tab.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/pgamin-server-connection-tab.png">
 </p>
 
 **Note:** The 'Host name / address' field must match the value (postgres) specified in the project's 
