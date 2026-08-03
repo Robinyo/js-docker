@@ -16,6 +16,8 @@ Also see: [Background](docs/background/README.md)
   * [Working with Jaspersoft Studio](docs/jaspersoft-studio/README.md)
   * [Working with pgAdmin](docs/pgadmin/README.md)
 
+![divider](./divider.png)
+
 ## JasperReports Server
 
 ### Clone the project
@@ -128,6 +130,8 @@ docker container logs jasperreports-server-cmdline
 ### Source Code
 
 See: [JasperReports Server (Community Edition)](https://github.com/jose-da-s/jasper-server-os)
+
+![divider](./divider.png)
 
 ## Jaspersoft Studio
 
