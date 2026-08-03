@@ -8,7 +8,7 @@ stand-alone application.
 [Download](https://community.jaspersoft.com/project/jaspersoft-studio/releases) the Community Edition of Jaspersoft
 Studio.
 
-#### Servers
+### Servers
 
 In Jaspersoft Studio right-click on Servers and select Create JasperReports Server Connection:
 
@@ -16,7 +16,7 @@ In Jaspersoft Studio right-click on Servers and select Create JasperReports Serv
   <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jaspersoft-studio-jasperserver-connection.png">
 </p> 
 
-#### Data Adapters - Database JDBC Connection
+### Data Adapters - Database JDBC Connection
 
 <p align="center">
   <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/database-jdbc-connection.png">
@@ -27,7 +27,7 @@ JDBC Url: jdbc:postgresql://localhost:5432/serendipity
 Username: POSTGRES_USER (admin)  
 Password: POSTGRES_PASSWORD (secret)
 
-#### Custom Fonts
+### Custom Fonts
 
 [Download](https://fonts.google.com/specimen/Open+Sans?query=open+sans#standard-styles) the Open Sans font family.
 
@@ -47,7 +47,7 @@ Bold Tab:
 
 **Note:** It has been my experience that Jaspersoft Studio doesn't support the Web Open Font Format (.woff).
 
-#### Fonts Extension
+### Fonts Extension
 
 In Jaspersoft Studio choose Preferences => Jaspersoft Studio => Fonts, select 'Open Sans' and then click the Export button:
 
@@ -68,7 +68,7 @@ Right-click on your project and select Build Path => Configure Build Path. Click
   <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jaspersoft-studio-java-build-path.png">
 </p>
 
-#### Report Publishing
+### Report Publishing
 
 In Jaspersoft Studio select Project => Publish the file on JasperReports Server:
 
@@ -102,7 +102,7 @@ JasperReports Server repository:
   <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-reports-folder.png">
 </p>
 
-### Resources
+## Resources
 
 * Jaspersoft Community: [Documentation](https://community.jaspersoft.com/documentation?version=59011)
 * Jaspersoft Community: [Forum (Answers)](https://community.jaspersoft.com/answers)

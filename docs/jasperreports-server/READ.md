@@ -2,10 +2,6 @@
 
 ### Getting Started
 
-Follow the steps in the [Quick Start Guide](https://github.com/Robinyo/serendipity-api/blob/master/projects/spring-boot/docs/developer/quick-start-guide.md).
-
-### JasperReports Server
-
 Navigate to the JasperReports Server Community Edition welcome page: http://localhost:11001/jasperserver
 
 You can login using the following credentials:
@@ -13,27 +9,27 @@ You can login using the following credentials:
 * Sample User - User ID: joeuser and Password: joeuser
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/master/projects/spring-boot/docs/screen-shots/jasperserver-login.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-login.png">
 </p>
 
 JasperReports Server Community Edition landing page:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/master/projects/spring-boot/docs/screen-shots/jasperserver-landing-page.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-landing-page.png">
 </p>
 
 JasperReports Server Community Edition landing page with samples (JRS_LOAD_SAMPLES=true):
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/master/projects/spring-boot/docs/screen-shots/jasperserver-landing-page-load-samples.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-landing-page-load-samples.png">
 </p>
 
-#### Data Sources
+### Data Sources
 
 In JasperReports Server right-click on Data Sources and select Add Resource => Data Source:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/master/projects/spring-boot/docs/screen-shots/jasperserver-add-resource-data-source.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-add-resource-data-source.png">
 </p>
 
 JDBC Driver: org.postgresql.Driver  
@@ -46,10 +42,10 @@ Password: POSTGRES_PASSWORD (secret)
 Click Save and then enter a Data Source Name:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-api/blob/master/projects/spring-boot/docs/screen-shots/jasperserver-data-source-name.png">
+  <img src="https://github.com/Robinyo/js-docker/blob/main/docs/screen-shots/jasperserver-data-source-name.png">
 </p>
 
-### Resources
+## Resources
 
 * Jaspersoft Community: [Documentation](https://community.jaspersoft.com/documentation?version=59011)
 * Jaspersoft Community: [Forum (Answers)](https://community.jaspersoft.com/answers)
