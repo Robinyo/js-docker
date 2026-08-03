@@ -1,4 +1,6 @@
-# Working with PostgreSQL
+<h1 align="center">Working with pgAdmin</h1>
+
+### Getting Started
 
 You can use [pgAdmin](https://www.pgadmin.org/) to manage PostrgeSQL.
 
